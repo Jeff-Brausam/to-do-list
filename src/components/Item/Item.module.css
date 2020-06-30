@@ -1,0 +1,108 @@
+.Item {
+    list-style: none;
+    box-shadow: 0 2px 3px rgba(0,0,0,.2);
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    margin-top: .2rem;
+    background: rgb(250, 250, 250);
+    cursor: default;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    word-break: break-word;
+}
+
+.UserText {
+    max-width: 30rem;
+}
+
+/* Item Containers */
+.Item span {
+    display:flex;  
+    flex-direction: row;
+    align-items: center;
+}
+
+.ItemTextContainer {
+    width: 100%;
+}
+
+.Item button {
+    border: none;
+    background: rgb(250, 250, 250);
+    outline: none;
+    border: none;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.Item button:hover {
+    cursor: pointer;
+}
+
+.Completed {
+    text-decoration: line-through;
+    color: #777;
+}
+
+.CompleteBtn {
+    color: rgb(22, 149, 0);
+    margin-right: 1rem;   
+}
+
+.CompleteBtn:hover {
+    color: rgb(32, 211, 0);
+}
+
+.CompleteBtnActive {
+    color: rgb(32, 211, 0);
+    margin-right: 1rem;   
+}
+
+.RemoveBtn {
+    color: rgb(197, 0, 0);
+    margin-left: 1rem;
+}
+
+.RemoveBtn:hover{
+    color: rgb(255, 38, 38);
+}
+
+.EditBtn {
+    color: rgb(255, 196, 0);
+    margin-left: 1rem;
+}
+
+.EditBtn:hover {
+    color: rgb(255, 217, 0);
+}
+
+.EditForm {
+    display:flex;
+    width: 100%; 
+    padding: 0 1.5rem;
+}
+
+.EditInput {
+    font-size: 1.2rem;  
+    padding: 1.12rem .5rem;
+    width: 100%;
+    border-bottom: 2px orange solid;
+}
+
+.EditActive {
+    margin-left: 1rem;
+    color: rgb(255, 217, 0);
+}
+
+/* Phones increase text a bit*/
+@media (max-width: 37.5em) {
+    .Item {
+        font-size: 1.5rem;
+    }
+    .Item button {
+        font-size: 1.5rem;
+    }
+}

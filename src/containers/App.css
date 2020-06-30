@@ -1,0 +1,46 @@
+.App {
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+/* Phones */
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 70%; 
+    }
+    .App {
+      width: 90%;
+    }
+  }
+
+/* Tablets */
+  @media (min-width: 37.5em) {
+    html { 
+      font-size: 80%;
+    }
+    .App {
+      width: 60%;
+    }
+  } 
+
+/* Laptops */
+  @media (min-width: 56.25em) {
+    html { 
+      font-size: 90%;
+    }
+    .App {
+      width: 45%;
+    }
+  }
+
+/* Big screens */
+@media (min-width: 75em) {
+  html { 
+    font-size: 90%;
+  }
+  .App {
+    width: 35%;
+  }
+}
